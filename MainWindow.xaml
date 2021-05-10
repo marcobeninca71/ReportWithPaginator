@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfAppReports.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppReports"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="1" Content="Print" Command="{Binding PrintCommand}" Margin="20,20,20,20"/>
+        <Button Grid.Row="3" Content="Print direct with queue" Command="{Binding PrintDirectQueueCommand}" Margin="20,20,20,20"/>
+    </Grid>
+</Window>
